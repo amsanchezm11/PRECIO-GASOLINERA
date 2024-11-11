@@ -1,0 +1,154 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    margin-bottom: 80px;
+}
+
+
+.contenedor-formulario {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: cadetblue;
+}
+
+.container-input {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+select:focus {
+    border: 2px solid cadetblue;
+    outline: none;
+    box-shadow: 0 0 5px cadetblue; 
+}
+
+select option:hover {
+    background-color: cadetblue; 
+    color: white;
+}
+
+select option:checked {
+    background-color: cadetblue;
+    color: white;
+}
+
+.container-boton {
+    margin-top: 20px;
+}
+
+.boton {
+    padding: 12px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: cadetblue;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #5f9ea0; 
+}
+
+
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: cadetblue;
+    color: white;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+td {
+    font-size: 0.9em;
+}
+
+td, th {
+    word-wrap: break-word;
+}
+
+
+td:empty {
+    background-color: #f9f9f9;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+    height: 90px;
+    align-self: flex-end;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .contenedor-formulario {
+        padding: 15px;
+    }
+
+    .boton {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+
